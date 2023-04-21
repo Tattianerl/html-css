@@ -1,0 +1,42 @@
+@charset "utf-8";
+ 
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+@font-face {
+    font-family: 'Pakades';
+    src: url('font/Pakades.otf')format('font/opentype'), url('font/Pakades.ttf') format(truEtype);
+}
+/*Tipos de format()
+-opentype(otf)
+-truEtype(ttf)
+-truetype-aat(Apple Advancend Tyoography)
+-svg
+*/
+body{
+    background-image:linear-gradient(to bottom
+    ,#4092C2, #9CD6F7, #52B8F5);
+    
+    height: 100%;
+
+}
+main{
+    background-color: white;
+    width: 600px;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 5px 5px 15px#1a465758;
+    border-radius: 10px;
+}
+
+h1{
+    font-family: 'Pakades';
+    text-align: center;
+    color: #4A6575;
+    box-shadow: 1px 1px 2px #1732413f;
+}
+h2{
+    color: #4083c2;
+}
+p{
+    text-align: justify;
+    text-indent: 20px;
+}
