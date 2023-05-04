@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Meu primeiro Formulário</h1>
+    <form action="formulario.php" method="post"  autocomplete="on">
+        <p>
+            <label for="inome">Nome:
+                 </label><input type="text" name="nome" id="inome" size="30" placeholder="Digite Nome">
+        </p>
+        <p>
+            <label for="isobrenome">Sobrenome: 
+            </label><input type="text" name="sobrenome" id="isobrenome" size="30">
+        </p>
+        <p>
+            <label for="iidade">Idade: 
+            </label><input type="text" name="idade" id="iidade" size="5">
+        </p>
+        <p><label for="cel">Contato</label>
+            <input type="number" name="contato" id="cel" required minlength="9" maxlength="9" size="15" placeholder="(21)9999-99999">
+        </p>
+       
+        <p><label for="isu">Usuario:</label>
+            <input type="text" name="usuario" id="isu" required minlength="3">
+        </p>
+        <p><label for="passw">Senha: 
+        </label><input type="password" name="pass" id="passw" required minlength="8">
+    </p>
+        <p><input type="submit" value="Enviar">
+        <input type="reset" value="Limpar"></p>
+    </form>
+</body>
+</html>

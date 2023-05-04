@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+        }
+        caption{
+            background-color: grey;
+            padding: 10px;
+            font-weight: bold;
+        }
+        thead, th{
+            background-color: rgb(60, 59, 59);
+            color: white;
+            text-align: center;
+            position: relative;
+            
+        }
+        thead > tr > th{
+            top: -1px;
+            position: sticky;
+        }
+        td, tr{
+            border: 1px solid black;
+            padding-left: 10px;
+        }
+        td.num{
+            text-align: right;
+            padding: 5px;
+        }
+                         /*ímpar*/
+        tbody > tr:nth-child(odd)  { 
+            background-color: grey;
+        }
+                           /*par*/
+        tbody > tr:nth-child(even) {
+            background-color: aqua;
+        }
+        td.tot{
+            background-color: blueviolet;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <h1> Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                tr td th
+            TBODY
+                tr td th
+            TFOOT
+                tr td th
+    -->
+</body>
+    <table>
+        <caption>População das unidades Federativas</CAPtion>
+        <thead>
+            <tr>
+                <th scope="col">ESTADO</th> 
+                <th scope="col" style="width: 70px";>POPULAÇÃO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.985.284</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.985.284</td>
+            </tr>
+            <tr>
+                <td>Rio grade do sul</td>
+                <td class="num">11.466.630</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.985.284</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.985.284</td>
+            </tr>
+            <tr>
+                <td>Rio grade do sul</td>
+                <td class="num">11.466.630</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.985.284</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.985.284</td>
+            </tr>
+            <tr>
+                <td>Rio grade do sul</td>
+                <td class="num">11.466.630</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes:</th>
+                <strong>
+                    <td class="tot">210.141.915</td>
+                </strong>
+            </tr>
+            
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid eveniet sapiente iusto accusamus id magnam tenetur, quis natus est? Maxime ratione inventore vitae, aperiam ducimus minima nemo suscipit eligendi labore.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid eveniet sapiente iusto accusamus id magnam tenetur, quis natus est? Maxime ratione inventore vitae, aperiam ducimus minima nemo suscipit eligendi labore.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid eveniet sapiente iusto accusamus id magnam tenetur, quis natus est? Maxime ratione inventore vitae, aperiam ducimus minima nemo suscipit eligendi labore.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid eveniet sapiente iusto accusamus id magnam tenetur, quis natus est? Maxime ratione inventore vitae, aperiam ducimus minima nemo suscipit eligendi labore.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid eveniet sapiente iusto accusamus id magnam tenetur, quis natus est? Maxime ratione inventore vitae, aperiam ducimus minima nemo suscipit eligendi labore.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid eveniet sapiente iusto accusamus id magnam tenetur, quis natus est? Maxime ratione inventore vitae, aperiam ducimus minima nemo suscipit eligendi labore.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid eveniet sapiente iusto accusamus id magnam tenetur, quis natus est? Maxime ratione inventore vitae, aperiam ducimus minima nemo suscipit eligendi labore.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid eveniet sapiente iusto accusamus id magnam tenetur, quis natus est? Maxime ratione inventore vitae, aperiam ducimus minima nemo suscipit eligendi labore.</p>
+</html>
