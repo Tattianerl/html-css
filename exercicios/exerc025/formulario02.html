@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+            background-color: rgba(0, 0, 255, 0.397);
+        }
+        h1{
+            text-align: center;
+            box-shadow: inset 1px 1px 7px rgba(0, 0, 255, 0.421);
+        }
+        form{
+            width:400px;
+            height: 300px;
+            background-color: rgba(128, 128, 128, 0.797);
+            padding: 20px;
+            font-weight: bold;
+
+        }
+        .botao{
+            border-radius: 10px;
+            padding: 10px 20px;
+           
+        }
+        .botao:hover{
+            background-color: rgba(0, 0, 255, 0.809);
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulários</h1>
+
+    <form action="formulario.php" method="get" autocomplete="on">
+    <p>
+        <label for="inome">Nome:</label>
+        <input type="text" name="nome" id="inome" required placeholder="Nome completo" autocomplete="name" maxlength="30">
+    </p>
+        <p>
+            <label for="imedia">Média</label>
+            <input type="number" name="media" id="imedia" required placeholder="0 a 10" step="0.1" min="0" max="10" value="5" required>
+        </p>
+        <p>
+            <label for="idia">Dia da Prova</label>
+            <input type="date" name="dia" id="idia">
+        </p>
+        <p>
+            <label for="ihora">Horário da prova</label>
+            <input type="time" name="hora" id="ihora">
+        </p>
+        <p>
+            <label for="iano">Período Letivo</label>
+            <input type="month" name="ano" id="iano" value="Maio-2023">
+        </p>
+        <p>
+            <input class="botao" type="submit" value="Enviar">
+            <input class="botao" type="submit" value="Limpar">
+        </p>
+        
+           
+
+    </form>
+</body>
+</html>
